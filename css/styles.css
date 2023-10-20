@@ -1,9 +1,84 @@
 * {
     box-sizing: border-box;
     color: #000;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 body {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+}
+
+.whole-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 667px;
+    width: 375px;
     background-color: #19A1AE;
 }
 
+.top-image {
+    position: absolute;
+    top: 164;
+    background-color: #fff;
+    height: 374px;
+    border-radius: 15px;
+
+}
+
+.profile-picture {
+    position: absolute;
+    z-index: 10;
+    top: 92px;
+}
+
+.name-age {
+    display: flex;
+    flex-direction: row;
+}
+
+.name-age h2:nth-child(1) {
+    margin: 0;
+    top: 212px;
+    position: absolute;
+}
+
+.name-age h2:nth-child(2) {
+    margin: 0;
+    top: 212px;
+    position: absolute;
+    right: 0;
+}
+
+.position {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 243px;
+    justify-content: center;
+}
+
+.socials {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    display: flex;
+}
+
+.socials ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 24px;
+}
+
+.above {
+  position: relative;
+}
