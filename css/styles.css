@@ -5,80 +5,95 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: beige;
+    display: flex;
     width: 100vw;
     height: 100vh;
-}
-
-main {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
 }
 
 .whole-card {
+    width: 326px;
+    height: 374px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 50px 100px -20px rgb(8 70 94 / 50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    background-image: url(/assets/images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    height: 140px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: relative;
+}
+
+.profile-image {
+    top: 92px;
+    position: relative; 
+}
+
+.profile-image img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.body {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 667px;
-    width: 375px;
-    background-color: #19A1AE;
+    top: 72px;
+    position: relative;
 }
 
-.top-image {
-    position: absolute;
-    top: 164;
-    background-color: #fff;
-    height: 374px;
-    border-radius: 15px;
-
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E3349;
 }
 
-.profile-picture {
-    position: absolute;
-    z-index: 10;
-    top: 92px;
+.age {
+    font-size: 18px;
+    font-weight: 400;
+    color: #979797;
 }
 
-.name-age {
+.user-location {
+    top: 103px;
+    color: #6B7082;
+}
+
+.footer {
     display: flex;
     flex-direction: row;
-}
-
-.name-age h2:nth-child(1) {
-    margin: 0;
-    top: 212px;
-    position: absolute;
-}
-
-.name-age h2:nth-child(2) {
-    margin: 0;
-    top: 212px;
-    position: absolute;
-    right: 0;
-}
-
-.position {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    top: 243px;
-    justify-content: center;
-}
-
-.socials {
+    bottom: 48px;
     position: relative;
+    justify-content: space-evenly;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    bottom: 0;
-    display: flex;
 }
 
-.socials ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    bottom: 24px;
+.numbers {
+    color: #2e3349;
+    font-size: 18px;
+    font-weight: 700;
+    
 }
 
-.above {
-  position: relative;
+.footer-name {
+    color: #6b7082;
+    font-size: 10px;
+    letter-spacing: 1.5px;
 }
